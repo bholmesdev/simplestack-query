@@ -1,6 +1,6 @@
 {
 	"name": "@simplestack/query",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"description": "Add client JS to your Astro components, without the query selectors",
 	"type": "module",
 	"scripts": {
