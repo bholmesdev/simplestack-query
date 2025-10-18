@@ -1,7 +1,7 @@
 {
-	"name": "simple-stack-query",
+	"name": "@simplestack/query",
 	"version": "0.2.0",
-	"description": "Select elements in Astro without the hassle",
+	"description": "Add client JS to your Astro components, without the query selectors",
 	"type": "module",
 	"scripts": {
 		"test": "node --test test",
