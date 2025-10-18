@@ -4,7 +4,7 @@
 	"description": "Add client JS to your Astro components, without the query selectors",
 	"type": "module",
 	"scripts": {
-		"test": "node --test test",
+		"test": "node --test test/**/*.test.js",
 		"e2e": "pnpm -r --filter=\"./fixtures/**\" build && pnpm exec playwright test",
 		"test:watch": "node --test --watch test"
 	},
