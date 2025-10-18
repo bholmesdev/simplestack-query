@@ -32,6 +32,8 @@ function vitePlugin({ root }: { root: URL }): VitePlugin {
 		transform(code, id) {
 			const [baseId, search] = id.split("?");
 			if (!baseId?.endsWith(".astro")) return;
+			// Ignore Astro components in node_modules
+			if (baseId.includes("node_modules")) return;
 
 			const isAstroFrontmatter = !search;
 
