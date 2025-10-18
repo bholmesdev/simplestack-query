@@ -46,7 +46,7 @@ function vitePlugin({ root }: { root: URL }): VitePlugin {
 				);
 				return `
       import { scope as __scope } from 'simple:scope';
-			import * as __internals from 'simple-stack-query/internal.server';
+			import * as __internals from '@simplestack/query/internal.server';
 
 			const RootElement = __internals.createRootElement(__scope);\n${codeWithTargetsReplaced}`;
 			}
@@ -56,8 +56,8 @@ function vitePlugin({ root }: { root: URL }): VitePlugin {
 
 			return `
     import { scope as __scope } from 'simple:scope';
-    import * as __internals from "simple-stack-query/internal";
-		${hasSignalPolyfill(root) ? `import { effect as __effect } from "simple-stack-query/effect";` : "const __effect = undefined;"}
+    import * as __internals from "@simplestack/query/internal";
+		${hasSignalPolyfill(root) ? `import { effect as __effect } from "@simplestack/query/effect";` : "const __effect = undefined;"}
 
 		const RootElement = __internals.createRootElement(__scope, __effect);\n${code}`;
 		},
