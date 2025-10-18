@@ -14,8 +14,14 @@
 		"./effect": "./src/effect.ts",
 		"./internal.server": "./src/internal.server.ts"
 	},
-	"keywords": ["withastro", "astro-integration"],
-	"files": ["src", "ambient.d.ts"],
+	"keywords": [
+		"withastro",
+		"astro-integration"
+	],
+	"files": [
+		"src",
+		"ambient.d.ts"
+	],
 	"author": "bholmesdev",
 	"license": "MIT",
 	"repository": {
@@ -24,8 +30,6 @@
 		"directory": "packages/query"
 	},
 	"dependencies": {
-		"@clack/prompts": "^0.7.0",
-		"kleur": "^4.1.5",
 		"vite-plugin-simple-scope": "^2.0.2"
 	},
 	"engines": {
