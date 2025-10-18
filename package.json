@@ -6,6 +6,7 @@
 	"scripts": {
 		"test": "node --test test/**/*.test.js",
 		"e2e": "pnpm -r --filter=\"./fixtures/**\" build && pnpm exec playwright test",
+		"e2e:test": "pnpm -r --filter=\"./fixtures/**\" build && pnpm exec playwright test --grep",
 		"test:watch": "node --test --watch test"
 	},
 	"exports": {
